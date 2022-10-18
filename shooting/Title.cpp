@@ -12,7 +12,7 @@ AbstractScene* Title::Update()
 {
 	
 
-	if (pad.g_KeyFlg&& XINPUT_BUTTON_A)
+	if (CheckHitKey(XINPUT_BUTTON_A))
 	{
 		return new GameMain();
 	}
