@@ -7,7 +7,7 @@ private:
 public:
 	GameMain();
 	//デストラクタ
-	~GameMain() {};
+	~GameMain() {}
 	//描画以外の更新を実装する
 	virtual AbstractScene* Update() override;
 	//描画に関することを実装する
