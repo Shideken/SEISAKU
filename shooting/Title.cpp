@@ -1,6 +1,5 @@
 #include"DxLib.h"
 #include "Title.h"
-#include"PadInput.h"
 #include "GameMain.h"
 
 Title::Title()
@@ -10,12 +9,7 @@ Title::Title()
 
 AbstractScene* Title::Update()
 {
-	
 
-	if (CheckHitKey(XINPUT_BUTTON_A))
-	{
-		return new GameMain();
-	}
 
 	return this;
 }

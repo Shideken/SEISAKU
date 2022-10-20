@@ -1,12 +1,12 @@
 #pragma once
 #include "AbstractScene.h"
-#include"PadInput.h"
+
 
 class Title :
     public AbstractScene
 {
 private:
-    PAD pad;
+ 
 public:
     //コンストラクタ
     Title();
