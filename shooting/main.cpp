@@ -18,7 +18,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 
     SetDrawScreen(DX_SCREEN_BACK);	// •`‰ææ‰æ–Ê‚ğ— ‚É‚·‚é
     SceneManager* sceneMng;
-    SetFontSize(20);		// •¶šƒTƒCƒY‚ğİ’è
+
     try
     {
         sceneMng = new SceneManager((AbstractScene*)new Title());
