@@ -1,7 +1,6 @@
 #include"DxLib.h"
 #include"SceneManager.h"
 #include"Title.h"
-
 /***********************************************
  * プログラムの開始
  ***********************************************/
@@ -32,7 +31,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 
     // ゲームループ
     while (ProcessMessage() == 0 && sceneMng->Update() != nullptr) {
-
         ClearDrawScreen();		// 画面の初期化
         sceneMng->Draw();
         ScreenFlip();

@@ -7,8 +7,6 @@ private:
 	Player player;
 
 	int haikeiimage;
-	int* player; 
-	int* enemy[];
 public:
 	GameMain();
 	//デストラクタ

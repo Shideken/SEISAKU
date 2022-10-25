@@ -15,4 +15,5 @@ AbstractScene* GameMain::Update() {
 
 void GameMain::Draw() const {
 	DrawGraph(0, 0, haikeiimage, FALSE);
+	player.Draw();
 }
