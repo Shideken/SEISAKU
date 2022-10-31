@@ -1,6 +1,10 @@
 #include"DxLib.h"
 #include"SceneManager.h"
+#include"pad.h"
 #include"Title.h"
+
+
+Pad pad;
 /***********************************************
  * プログラムの開始
  ***********************************************/
@@ -31,6 +35,9 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 
     // ゲームループ
     while (ProcessMessage() == 0 && sceneMng->Update() != nullptr) {
+        pad.g_OldKey = pad.g_NowKey;
+        pad.g_NowKey = GetJoypadInputState(DX_INPUT_KEY_PAD1);
+        pad.g_KeyFlg = pad.g_NowKey & ~pad.g_OldKey;
         ClearDrawScreen();		// 画面の初期化
         sceneMng->Draw();
         ScreenFlip();
