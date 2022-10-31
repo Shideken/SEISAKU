@@ -10,7 +10,7 @@ Title::Title()
 AbstractScene* Title::Update()
 {
 
-	if (GetJoypadInputState(DX_INPUT_PAD1) & PAD_INPUT_A) {
+	if (GetJoypadInputState(DX_INPUT_KEY_PAD1) & PAD_INPUT_A) {
 		return new GameMain;
 	}
 	return this;

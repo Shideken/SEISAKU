@@ -9,7 +9,7 @@ if ((haikeiimage = LoadGraph("images/Haikei.png")) == -1);
 }
 
 AbstractScene* GameMain::Update() {
-
+	player.Move();
 	return this;
 }
 
